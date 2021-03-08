@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="inner">html이 바뀌는곳</p>
+    <!-- 글씨가 바뀌는 html -->
+    <p id="change"
+                onmouseover ="this.innerHTML='바뀐'"
+                onmouseout="this.innerHTML='마우스를 올리십시오'">마우스를 올리십시오</p>
+                <!-- 마우스를 올려 놓으면 가뀌는 이벤트 -->
+    <script>
+        document.getElementById('inner').innerHTML = '짜자잔';
+        function over(){
+            onmouseover.innerHTML='바뀐';
+        }
+        //prompt 경고창
+        // (조건문)? 참:거짓 삼항 연산자
+    </script>
+</body>
+</html>
