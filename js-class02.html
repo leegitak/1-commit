@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js로style을 바꿔보자</title>
+</head>
+    <style>
+        #no{
+            background-color: mediumturquoise;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+<body>
+    <!-- js로 css를 바꿔보는 시간입니다 -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad itaque aut, temporibus excepturi perspiciatis totam consectetur, nihil placeat repudiandae molestias officiis iure! Repellendus mollitia dignissimos nobis quas ea neque praesentium!
+    Id autem molestiae deserunt aspernatur nulla dignissimos mollitia, tenetur animi possimus velit perferendis, omnis saepe similique accusamus adipisci quae cupiditate minus provident delectus? Facere tempore quae explicabo dolorum voluptate tenetur.</p>
+
+                 <input type="button" value="night" onclick="
+                 document.querySelector('body').style.backgroundColor='black';
+                 document.querySelector('body').style.color='white';
+                 ">
+             
+                 <input type="button" value="day" onclick="
+                 document.querySelector('body').style.backgroundColor='white';
+                 document.querySelector('body').style.color='black';
+                 ">
+                 <!-- 버튼을 누르면 바디태그 색깔이 바뀐다 -->
+                 <p id="no"
+                 onmouseover ="this.style.border='red'"
+                 onmouseover ="style.border='black'">앙</p>
+        <script>
+            document.getElementById('no').addEventListener('mouseover',function(){
+                document.getElementById('no').style.backgroundColor='red';
+            })
+            document.getElementById('no').addEventListener('mouseout',function(){
+                document.getElementById('no').style.backgroundColor='mediumturquoise';
+            })
+                // 마우스오버 스타일 쓰는법이다
+            
+        </script>           
+</body>
+</html>
