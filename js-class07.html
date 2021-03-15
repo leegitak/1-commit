@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do-while</title>
+</head>
+
+<body>
+    <script>
+        var sum = prompt("몇단을 출력할까여?")
+        var num = 1;
+        // if(sum > 0 && sum<10){
+        // for(var i = 1;i<=9;i++){
+        // 	document.write(sum+" * "+i+" = "+(sum * i));
+        // 	document.write("<br>")
+        // }
+        // }else{
+        // 	document.write("숫자를 입력하십시오");
+        // }
+        if (sum > 0 && sum < 10) {
+            while (num <= 9) {
+                document.write(sum + " * " + num + " = " + (sum * num));
+                document.write("<br>")
+                num++;
+            }
+        } else {
+            document.write("숫자를 입력하십시오");
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>
