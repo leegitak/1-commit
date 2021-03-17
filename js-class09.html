@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListener1</title>
+</head>
+<body>
+    <h1 id="click_p"onclick="open_box()">여기를 클릭하십시오</h1>
+    <script>
+
+        function open_box(){
+            document.getElementById('click_p').addEventListener('click',function(){
+                document.getElementById('click_p').innerHTML="바뀌었습니다";
+            })
+        }
+    </script>
+</body>
+</html>
