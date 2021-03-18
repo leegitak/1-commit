@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //흔히 쓰는 함수
+        function a() {
+            document.write('흔히쓰는 함수 입니다')
+        }
+        //기명함수
+        var b = function bb() {
+            document.write('기명함수입니다')
+        }
+        //익명함수
+        var c = function () {
+            document.write('익명함수입니다')
+        }
+        //기명함수의 문제점
+        var add = function sum(a, b) {
+            return a + b;
+        }
+        var plus = add;
+        document.write(add(3, 4));
+        document.write(sum(5, 6));
+        //대충 익명함수 쓰는법
+        var add2 = function (a, b) {
+            return a + b;
+        }
+        var plus2 = add2;
+    </script>
+</body>
+
+</html>
