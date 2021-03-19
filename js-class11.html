@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열사용법</title>
+</head>
+<body>
+    <button onclick="changeColor()">배경색바꾸기</button>
+    <script>
+        	let color=["white", "yellow", "aqua", "purple"];
+			
+            let i=0;
+        
+            function changeColor(){
+                if(i>3){
+                    i = 0;
+                }else{
+                    i++;
+                }
+                document.body.style.background = color[i];
+            }
+    </script>
+</body>
+</html>
