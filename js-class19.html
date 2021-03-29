@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mousemove</title>
+    <title>Document</title>
     <style>
         body {
             background-color: black;
@@ -24,23 +24,22 @@
     </style>
 </head>
 <body>
-    <p id="mouseX"></p>
-    <p id="mouseY"></p>
+    <p id="mouseXY"></p>
     <div id="mousebox"></div>
     
     <script>
         var x = 0;
         var y = 0;
 
-        document.addEventListener('mousemove', function (event) {
+        document.addEventListener('click', function (event) {
 
             var mouse = document.getElementById('mousebox');
 
             x = event.clientX;  
             y = event.clientY;
 
-            document.getElementById('mouseX').innerHTML =" mouseX" + x + "Y" + y;
-            
+            document.getElementById('mouseXY').innerHTML =" mouseX" + x + "Y" + y;
+
             mousebox.style.left = x+"px";
             mousebox.style.top = y+"px";
         })
